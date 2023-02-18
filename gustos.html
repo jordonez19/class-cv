@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hoja de Vida</title>
+    <meta name="title" content="Hoja de Vida">
+    <meta name="description" content="Hoja de Vida de Astrid Orozco">
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<!-- bootsrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<body>
+
+    <header>
+        <div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/banner1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/banner2.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  fw-bold">
+            <div class="container-fluid container justify-content-end ">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  d-flex justify-content-around w-100">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary active" aria-current="page"
+                                href="./index.html">Presentacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="./estudios.html">Estudios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="./experiencia.html">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="./gustos.html">Gustos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="./contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="main container">
+        <h2 class="mb-2 mt-5 text-center azul">Gustos</h2>
+
+
+        <iframe class="my-5 iframe-video" width="560" height="315" src="./video/videoplayback.mp4">
+        </iframe>
+
+
+        <div class="d-flex flex-nowrap">
+            <div class="col">
+                <h5 class="mb-4 azul">Viajes</h5>
+                <div class="gustos-img">
+                    <i class="fa fa-plane" data-bs-toggle="modal" data-bs-target="#viajesModal"></i>
+
+                    <!-- <img src="./img/viajes.jpg" alt="" data-bs-toggle="modal" data-bs-target="#viajesModal"> -->
+                </div>
+            </div>
+
+            <div class="col">
+                <h5 class="mb-4 azul">Musica</h5>
+                <div class="gustos-img">
+                    <i class="fa fa-music" data-bs-toggle="modal" data-bs-target="#musicaModal"></i>
+
+                    <!-- <img src="./img/musica.png" alt="" data-bs-toggle="modal" data-bs-target="#musicaModal"> -->
+                </div>
+            </div>
+
+            <div class="col">
+                <h5 class="mb-4 azul">Desarrollo web</h5>
+                <div class="gustos-img">
+                    <i class="fa fa-laptop-code" data-bs-toggle="modal" data-bs-target="#desarrolloModal"></i>
+
+                    <!-- <img src="./img/desarrollo.png" alt="" data-bs-toggle="modal" data-bs-target="#desarrolloModal"> -->
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Modal para Viajes -->
+        <div class="modal fade" id="viajesModal" tabindex="-1" aria-labelledby="viajesModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title azul" id="viajesModalLabel">Viajes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/viajes.jpg" alt="">
+                    </div>
+                    <p class="p-justify m-2">
+                        Me encantan los viajes porque me permiten experimentar nuevas culturas, conocer gente nueva y
+                        ver lugares hermosos que nunca había visto antes. Cada lugar tiene su propia personalidad y
+                        encanto, y la oportunidad de explorar todo lo que tiene que ofrecer es emocionante. Además, los
+                        viajes me dan la oportunidad de salir de mi zona de confort y experimentar cosas nuevas, lo que
+                        me ayuda a crecer como persona. Desde relajantes vacaciones en la playa hasta aventuras
+                        emocionantes en la montaña, siempre estoy emocionado por la próxima aventura que me espera.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para Musica -->
+        <div class="modal fade" id="musicaModal" tabindex="-1" aria-labelledby="musicaModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title azul" id="musicaModalLabel">Música</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/musica.png" alt="">
+                    </div>
+                    <div class="test-justify">
+                        <p class="p-justify m-2">
+                            Me gusta la música en porque es una forma de arte universal que puede transmitir
+                            emociones y contar historias de maneras que otros medios no pueden. La música tiene el poder
+                            de unir a las personas, romper barreras culturales y de idioma, y crear una experiencia
+                            compartida. Además, hay tantos géneros y estilos diferentes de música que siempre hay algo
+                            nuevo y emocionante para descubrir. Desde la música clásica hasta el rock, el jazz, el hip
+                            hop y más, cada género tiene su propio encanto y personalidad. En resumen, la música es una
+                            fuente constante de inspiración y alegría en mi vida.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal para Desarrollo Web -->
+        <div class="modal fade" id="desarrolloModal" tabindex="-1" aria-labelledby="desarrolloModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title azul" id="desarrolloModalLabel">Desarrollo Web</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="./img/desarrollo.png" alt="">
+                    </div>
+                    <div class="p-2">
+                        <p class="p-justify m-2">
+                            Me apasiona el desarrollo web porque es una forma de plasmar mi creatividad y habilidades
+                            técnicas en un proyecto tangible y útil para los demás. Me encanta el proceso de diseñar y
+                            construir sitios web y aplicaciones que sean atractivos, fáciles de usar y resuelvan
+                            problemas del mundo real. Además, siempre hay algo nuevo por aprender y mejorar en este
+                            campo en constante evolución, lo que lo hace aún más emocionante e interesante para mí.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-5">
+        <div class="d-flex icons mt-4 mb-2 p-0 justify-content-center align-items-center m-auto">
+            <i class="fa-brands fa-facebook "></i>
+            <i class="fa-brands fa-whatsapp "></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <hr>
+        <p class="m-2">copyrigtht © 2023, xavi dev </p>
+    </footer>
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <!--  <script>
+        $(document).ready(function () {
+            $('[data-bs-toggle="modal"]').eabs-ch(function () {
+                var target = $(this).data('target');
+                $(target).modal();
+            });
+        });
+
+    </script>
+-->
+</body>
+
+</html>

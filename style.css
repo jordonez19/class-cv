@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+:root {
+  --azulOp: #bdd2ec62;
+  --azul: #0d6efd;
+  --white: #fff;
+}
+
+/* selector universal borra todos los margenes q agrega el navegador */
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  box-shadow: 0 1px 10px var(--azul);
+  background: var(--white);
+
+}
+body {
+  background: var(--white);
+  font-size: 16px;
+  font-family: "Kufam", cursive;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+li::marker {
+  color: var(--azul);
+}
+
+.carousel-item img {
+  height: 40vh;
+}
+/* 20 PX ARRIBA Y ABAJO Y AUTO PARA CENTRAR  */
+header,
+.main,
+footer {
+  width: 100%;
+  text-align: center;
+}
+.main {
+  min-height: 70vh;
+}
+
+.experiencia-logo {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.img-presentacion {
+  border-radius: 50%;
+  box-shadow: 0 0 23px var(--azul);
+}
+
+.gustos-img {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gustos-img i {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: solid var(--azul) 4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px var(--azul);
+  font-size: 85px;
+  padding-top: 28px;
+}
+
+.iframe-video {
+  border-radius: 25px;
+  box-shadow: 0px 0px 25px var(--azul);
+}
+
+.gustos-img:hover {
+  transform: scale(1.2);
+}
+
+.modal-body img {
+  width: 100%;
+  height: 180px;
+}
+.p-justify {
+  padding: 10px !important;
+  text-align: justify !important;
+}
+
+.azul {
+  color: var(--azul);
+}
+.bg-azul {
+  background: var(--azulOp);
+}
+.text-justiy {
+  text-align: justify;
+}
+.icons {
+  width: 30%;
+  box-sizing: border-box;
+  font-size: 20px;
+  cursor: pointer;
+}
+.icons i:nth-child(1) {
+  color: rgb(58, 58, 207);
+  margin: auto;
+}
+.icons i:nth-child(2) {
+  color: rgb(28, 172, 28);
+  margin: auto;
+}
+.icons i:nth-child(3) {
+  color: rgb(255, 89, 19);
+  margin: auto;
+}
+
+/* CLEAR:BOTH LIMPIAR EL FLOAT: LEFT */
+footer {
+  background: var(--white);
+  color: var(--azul);
+  clear: both;
+  font-weight: 700;
+  text-align: center;
+  box-shadow: 0 -1px 10px var(--azul);
+}
+
+
