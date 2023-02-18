@@ -1,23 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
 :root {
   --azulOp: #bdd2ec62;
   --azul: #0d6efd;
   --white: #fff;
+  --verde: rgb(28, 172, 28);
+  --naranja: rgb(255, 89, 19);
+  --grisOscuro: rgb(42, 42, 42);
 }
 
-/* selector universal borra todos los margenes q agrega el navegador */
 *,
 html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-nav{
+nav {
   box-shadow: 0 1px 10px var(--azul);
   background: var(--white);
-
 }
 body {
   background: var(--white);
@@ -35,7 +36,6 @@ li::marker {
   height: 40vh;
 }
 
-/* 20 PX ARRIBA Y ABAJO Y AUTO PARA CENTRAR  */
 header,
 .main,
 footer {
@@ -49,7 +49,7 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.e-container{
+.e-container {
   align-items: start;
 }
 
@@ -117,24 +117,24 @@ footer {
   font-size: 20px;
   cursor: pointer;
 }
-.icons a{
+.icons a {
   margin: auto;
   text-decoration: none;
 }
-.navbar-collapse{
+.navbar-collapse {
   text-align: start;
 }
 .icons a:nth-child(1) {
-  color: rgb(58, 58, 207);
+  color: var(--azul) ;
 }
 .icons a:nth-child(2) {
-  color: rgb(28, 172, 28);
+  color: var(--verde) ;
 }
 .icons a:nth-child(3) {
-  color: rgb(255, 89, 19);
+  color: var(--naranja) ;
 }
 .icons a:nth-child(4) {
-  color: rgb(42, 42, 42);
+  color: var(--grisOscuro) ;
 }
 
 /* CLEAR:BOTH LIMPIAR EL FLOAT: LEFT */
@@ -146,5 +146,3 @@ footer {
   text-align: center;
   box-shadow: 0 -1px 10px var(--azul);
 }
-
-
