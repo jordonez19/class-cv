@@ -7,6 +7,7 @@
     <meta name="title" content="Hoja de Vida">
     <meta name="description" content="Hoja de Vida de Astrid Orozco">
     <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link rel="stylesheet" type="text/css" href="./styleEffects.css" />
     <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,37 @@
 <body>
 
     <header>
-        <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light  fw-bold  slideInDown sticky-top">
+            <div class="container-fluid container justify-content-end ">
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  d-flex justify-content-around w-100">
+                        <li class="nav-item">
+                            <a class="nav-link text-primary active" aria-current="page"
+                                href="./index.html">Presentacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="./estudios.html">Estudios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="./experiencia.html">Experiencia</a>
+                        </li>
+                        <li class="nav-item">
+                             <a class="nav-link text-primary" href="./gustos.html">Pasatiempos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-primary" href="./contacto.html">Contacto</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="slideInDown">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -46,42 +77,11 @@
                 </button>
             </div>
         </div>
-
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light  fw-bold">
-            <div class="container-fluid container justify-content-end ">
-                <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse " id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0  d-flex justify-content-around w-100">
-                        <li class="nav-item">
-                            <a class="nav-link text-primary active" aria-current="page"
-                                href="./index.html">Presentacion</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="./estudios.html">Estudios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="./experiencia.html">Experiencia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="./gustos.html">Gustos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-primary" href="./contacto.html">Contacto</a>
-                        </li>
-
-                    </ul>
-                </div>
-            </div>
-        </nav>
     </header>
 
-    <section class="main container ">
-        <div class="container py-4">
+    <section class="main container  slideInUp ">
+        <div class="container py-4 e-container ">`
+            <h2 class="my-5  azul text-start" >Contactame</h2>
             <form action="https://formsubmit.co/javier19pedraza@gmail.com" method="POST">
                 <input type="hidden" name="_next" value="https://mellifluous-biscuit-0faaf5.netlify.app/mensaje.html">
                 <input type="hidden" name="_captcha" value="false">
@@ -112,14 +112,15 @@
         </div>
     </section>
 
-    <footer class="mt-5">
+    <footer id="footer" class="mt-5 slideInLeft">
         <div class="d-flex icons mt-4 mb-2 p-0 justify-content-center align-items-center m-auto">
-            <i class="fa-brands fa-facebook "></i>
-            <i class="fa-brands fa-whatsapp "></i>
-            <i class="fa-brands fa-instagram"></i>
+            <a href="#footer"><i class="fa-brands fa-facebook  pulse"></i></a>
+            <a href="#footer"><i class="fa-brands fa-whatsapp  pulse"></i></a>
+            <a href="#footer"><i class="fa-brands fa-instagram pulse"></i></a>
+            <a href="https://github.com/jordonez19"><i class="fa-brands fa-github pulse"></i></a>
         </div>
         <hr>
-        <p class="m-2">copyrigtht © 2023, xavi dev </p>
+        <p class="m-2">Copyrigtht © 2023, XaviDev </p>
     </footer>
 
     <!-- script -->

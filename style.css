@@ -34,6 +34,7 @@ li::marker {
 .carousel-item img {
   height: 40vh;
 }
+
 /* 20 PX ARRIBA Y ABAJO Y AUTO PARA CENTRAR  */
 header,
 .main,
@@ -42,7 +43,14 @@ footer {
   text-align: center;
 }
 .main {
-  min-height: 70vh;
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.e-container{
+  align-items: start;
 }
 
 .experiencia-logo {
@@ -109,17 +117,24 @@ footer {
   font-size: 20px;
   cursor: pointer;
 }
-.icons i:nth-child(1) {
+.icons a{
+  margin: auto;
+  text-decoration: none;
+}
+.navbar-collapse{
+  text-align: start;
+}
+.icons a:nth-child(1) {
   color: rgb(58, 58, 207);
-  margin: auto;
 }
-.icons i:nth-child(2) {
+.icons a:nth-child(2) {
   color: rgb(28, 172, 28);
-  margin: auto;
 }
-.icons i:nth-child(3) {
+.icons a:nth-child(3) {
   color: rgb(255, 89, 19);
-  margin: auto;
+}
+.icons a:nth-child(4) {
+  color: rgb(42, 42, 42);
 }
 
 /* CLEAR:BOTH LIMPIAR EL FLOAT: LEFT */
