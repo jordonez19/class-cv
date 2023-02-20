@@ -19,6 +19,7 @@
 <!-- bootsrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light  fw-bold  slideInDown sticky-top">
@@ -41,7 +42,7 @@
                             <a class="nav-link text-primary" href="./experiencia.html">Experiencia</a>
                         </li>
                         <li class="nav-item">
-                             <a class="nav-link text-primary" href="./gustos.html">Pasatiempos</a>
+                            <a class="nav-link text-primary" href="./gustos.html">Pasatiempos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="./contacto.html">Contacto</a>
@@ -75,7 +76,7 @@
     </header>
     <section class="main container  slideInUp ">
         <div class="container py-4 e-container ">`
-            <h2 class="my-5  azul text-start" >Contactame</h2>
+            <h2 class="my-5  azul text-start">Contactame</h2>
             <form action="https://formsubmit.co/javier19pedraza@gmail.com" method="POST">
                 <input type="hidden" name="_next" value="https://mellifluous-biscuit-0faaf5.netlify.app/mensaje.html">
                 <input type="hidden" name="_captcha" value="false">
@@ -105,13 +106,38 @@
             </form>
         </div>
     </section>
-    <footer id="footer" class="mt-5 slideInLeft">
+    <div class="d-flex flex-column align-items-center mb-3">
+        <h2 class="my-5  azul text-start ">Otros tipos de inputs</h2>
+        <h5 class="azul">checkbox</h5>
+        <input type="checkbox" name="" id="">
+        <h5 class="azul">radio</h5>
+        <input type="radio" name="" id="">
+        <h5 class="azul">color</h5>
+        <input type="color" name="" id="">
+        <h5 class="azul">datetime</h5>
+        <input type="datetime" name="" id="">
+        <h5 class="azul">password</h5>
+        <input type="password" name="" id="">
+        <h5 class="azul">time</h5>
+        <input type="time" name="" id="">
+    </div>
+    <div class="map w-100 slideInLeft">
+        <iframe class="w-100"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8362391296782!2d-74.06887298618483!3d4.623289196641414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f998638900001%3A0x4cc62e7676fc1a91!2sInstituci%C3%B3n%20Universitaria%20de%20Colombia!5e0!3m2!1sen!2sco!4v1676903010812!5m2!1sen!2sco"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer id="footer" class=" slideInLeft">
         <div class="d-flex icons mt-4 mb-2 p-0 justify-content-center align-items-center m-auto">
             <a href="#footer"><i class="fa-brands fa-facebook  pulse"></i></a>
             <a href="#footer"><i class="fa-brands fa-whatsapp  pulse"></i></a>
             <a href="#footer"><i class="fa-brands fa-instagram pulse"></i></a>
             <a href="https://github.com/jordonez19"><i class="fa-brands fa-github pulse"></i></a>
         </div>
+        <strong class="azul">
+            <i class="fa-solid fa-mobile-screen-button"></i> +57 3507834094 <br>
+            <i class="fa-solid fa-envelope"></i> javier19pedraza@gmail.com
+           </strong>
         <hr>
         <p class="m-2">Copyrigtht © 2023, XaviDev </p>
     </footer>

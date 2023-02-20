@@ -137,6 +137,10 @@ footer {
   color: var(--grisOscuro) ;
 }
 
+.cv{
+  text-decoration: none;
+}
+
 /* CLEAR:BOTH LIMPIAR EL FLOAT: LEFT */
 footer {
   background: var(--white);
